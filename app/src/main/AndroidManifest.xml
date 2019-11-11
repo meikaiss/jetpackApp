@@ -20,6 +20,7 @@
         <activity android:name=".test.BTestActivity"/>
         <activity android:name=".test.ATestActivity"/>
         <activity android:name=".LifeCycleActivity"/>
+        <activity android:name=".LiveDataActivity"/>
 
     </application>
 
