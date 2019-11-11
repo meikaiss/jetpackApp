@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A_Test" />
+
+    <Button
+        android:id="@+id/btn_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="打开新Activity"/>
+
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="检查BTestActivity、DecorView的引用是否存在"/>
+
+    <TextView
+        android:id="@+id/tv_check_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="检查结果" />
+
+    <TextView
+        android:id="@+id/tv_check_result_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="检查结果" />
+
+
+
+</LinearLayout>

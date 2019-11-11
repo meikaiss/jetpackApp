@@ -78,18 +78,24 @@ public class LiveDataActivity extends AppCompatActivity {
                     }
                 }, 3000);
 
-
             }
         });
 
 
         myViewModel = ViewModelProviders.of(this).get(BusViewModel.class);
+
+
+        /**
+         * 分析：
+         * 1、入参1，LifecycleOwner实际就是 sdk 的Activity、Fragment，这个接口内部只有一个getLifecycle()方法
+         * 2、通过入参1提供的 具有生命周期的物体，向其注册一个观察者ObserverWrapper包装器，在收到生命周期变化时ObserverWrapper包装器再来触发LiveDat的Observer
+         */
         myViewModel.name.observe(this, new Observer<String>() {
             @Override
             public void onChanged(String s) {
 
             }
-        });;
+        });
 
     }
 
